@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Book extends Model
+class Menu extends Model
 {
     use HasFactory;
 
@@ -13,15 +13,11 @@ class Book extends Model
         'name',
         'description',
         'content',
-        'menu_id',
-        'price',
-        'price_sale',
         'active'
     ];
 
-    public function menu()
+    public function products()
     {
-        return $this->hasOne(Menu::class, 'id', 'menu_id')
-            ->withDefault(['name' => '']);
+        return $this->hasMany(Book::class, 'menu_id', 'id');
     }
 }

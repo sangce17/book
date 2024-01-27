@@ -30,31 +30,51 @@
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <p>
-                            Manager
+                            Danh Mục
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{url('/book')}}" class="nav-link">
+                            <a href="{{url('admin/menus/add')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Book</p>
+                                <p>Thêm danh mục</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{url('admin/menus/list')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Users</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>...</p>
+                                <p>Danh sách danh mục</p>
                             </a>
                         </li>
                     </ul>
                 </li>
+
+
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <p> Sản Phẩm
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="/admin/books/add" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Thêm Sản Phẩm</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin/books/list" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Danh Sách Sản Phẩm</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
 
             </ul>
         </nav>

@@ -37,6 +37,9 @@
         <!-- Main content -->
         <section class="content">
             <div class="container-fluid">
+
+                @include('admin.alert')
+
                 <div class="row">
                     <!-- left column -->
                     <div class="col-md-12">
@@ -46,7 +49,6 @@
                                 <h3 class="card-title">{{$title}}</h3>
                             </div>
                             @yield('content')
-                            @yield('')
                         </div>
                         <!-- /.card -->
                     </div>
