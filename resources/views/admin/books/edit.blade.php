@@ -30,14 +30,14 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="menu">Giá Gốc</label>
-                        <input type="number" name="price" value="{{ $books->price }}"  class="form-control" >
+                        <input type="number" name="price" value="{{ $books->price }}" class="form-control">
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="menu">Giá Giảm</label>
-                        <input type="number" name="price_sale" value="{{ $books->price_sale }}"  class="form-control" >
+                        <input type="number" name="price_sale" value="{{ $books->price_sale }}" class="form-control">
                     </div>
                 </div>
             </div>
@@ -52,16 +52,16 @@
                 <textarea name="content" id="content" class="form-control">{{ $books->content }}</textarea>
             </div>
 
-{{--            <div class="form-group">--}}
-{{--                <label for="menu">Ảnh Sản Phẩm</label>--}}
-{{--                <input type="file"  class="form-control" id="upload">--}}
-{{--                <div id="image_show">--}}
-{{--                    <a href="{{ $product->thumb }}" target="_blank">--}}
-{{--                        <img src="{{ $product->thumb }}" width="100px">--}}
-{{--                    </a>--}}
-{{--                </div>--}}
-{{--                <input type="hidden" name="thumb" value="{{ $product->thumb }}" id="thumb">--}}
-{{--            </div>--}}
+            {{--            <div class="form-group">--}}
+            {{--                <label for="menu">Ảnh Sản Phẩm</label>--}}
+            {{--                <input type="file"  class="form-control" id="upload">--}}
+            {{--                <div id="image_show">--}}
+            {{--                    <a href="{{ $product->thumb }}" target="_blank">--}}
+            {{--                        <img src="{{ $product->thumb }}" width="100px">--}}
+            {{--                    </a>--}}
+            {{--                </div>--}}
+            {{--                <input type="hidden" name="thumb" value="{{ $product->thumb }}" id="thumb">--}}
+            {{--            </div>--}}
 
             <div class="form-group">
                 <label>Kích Hoạt</label>

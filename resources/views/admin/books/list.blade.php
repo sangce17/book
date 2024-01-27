@@ -17,7 +17,7 @@
         <tbody>
         @foreach($book as $key => $books)
             <tr>
-                <td>{{ $books->id }}</td>
+                <td>{{ $loop->iteration }}</td>
                 <td>{{ $books->name }}</td>
                 <td>{{ $books->menu->name }}</td>
                 <td>{{ $books->price }}</td>

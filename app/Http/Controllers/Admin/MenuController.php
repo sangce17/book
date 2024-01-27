@@ -61,9 +61,10 @@ class MenuController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
-     */    public function destroy($id)
+     */
+    public function destroy($id)
     {
         Menu::destroy($id);
         return redirect()->back()->with('flash_message', 'Menu deleted!');

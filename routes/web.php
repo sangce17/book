@@ -18,9 +18,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('admin/users/login',[LoginController::class,'index'])->name('login');
+Route::get('admin/users/login', [LoginController::class, 'index'])->name('login');
 
-Route::post('admin/users/login/store',[LoginController::class,'store']);
+Route::post('admin/users/login/store', [LoginController::class, 'store']);
 
 
 Route::middleware(['auth'])->group(function () {
@@ -28,7 +28,6 @@ Route::middleware(['auth'])->group(function () {
 
         Route::get('/', [MainController::class, 'index'])->name('admin');
         Route::get('main', [MainController::class, 'index']);
-
 
 
         #Menu
@@ -59,3 +58,6 @@ Route::middleware(['auth'])->group(function () {
 
 
 });
+
+
+Route::get('/', [App\Http\Controllers\MainController::class, 'index']);

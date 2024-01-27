@@ -29,7 +29,7 @@ class BookAdminService
             return false;
         }
 
-        return  true;
+        return true;
     }
 
     public function insert($request)
@@ -45,10 +45,10 @@ class BookAdminService
         } catch (\Exception $err) {
             Session::flash('error', 'Thêm Sản phẩm lỗi');
             \Log::info($err->getMessage());
-            return  false;
+            return false;
         }
 
-        return  true;
+        return true;
     }
 
     public function get()

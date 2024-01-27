@@ -11,14 +11,13 @@ use Illuminate\Support\Str;
 class MenuService
 {
 
-//    public function show()
-//    {
-//        return Menu::select('name', 'id')
-//            ->where('parent_id', 0)
-//            ->orderbyDesc('id')
-//            ->get();
-//    }
-//
+    public function show()
+    {
+        return Menu::select('name', 'id')
+            ->orderbyDesc('id')
+            ->get();
+    }
+
     public function getAll()
     {
         return Menu::orderbyDesc('id')->paginate(20);
